@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@media screen and ( max-width: 572px) {
+    nav a {
+        display: hidden;
+    }
+
+    
+}
