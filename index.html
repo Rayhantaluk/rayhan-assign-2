@@ -25,7 +25,13 @@
         margin-left: -100px;
         
         
-    }    
+    }
+    .deals-container{
+        @media screen and (max-width: 572px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
     </style>
 </head>
 <body>
@@ -59,7 +65,7 @@
             </div>
         </section>
         <!-- section part 2 -->
-         <section class="text-center px-6">
+        <section class="text-center px-6">
             <div class="mb-12">
                 <h2 class="text-3xl  font-bold mb-6"><span class="text-orange-600">Our</span> Plants</h2>
                 <p class="text-gray-600 mt-4">
@@ -117,9 +123,9 @@
                 </div>
                 
             </div>
-         </section>
+        </section>
          <!-- section part 3 -->
-         <section class="bg-gray-100 p-4">
+        <!-- <section class="bg-gray-100 p-4">
             <div class="max-w-6xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row items-center p-6 space-y-6 md:space-y-0 md:space-x-6">
                 <div class="w-full md:w-1/2 relative">
                     <img src="images/flower-store.png" alt="" class="w-full h-full rounded-lg object-cover">
@@ -137,8 +143,37 @@
                     </ul>
                     
                 </div>
-            </div>                
-         </section>
+            </div>                 -->
+        </section>
+         <!-- section part 4 -->
+        <section class="deals-container max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold"> <span class="text-orange-500">Latest</span> Deals</h2>
+            <p class="text-gray-500 max-w-2xl mx-auto mb-10">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="flex flex-col gap-6">
+                    <div class="relative rounded-xl overflow-hidden h-36 md:h-40 bg-cover bg-center" style="background-image: url(images/deal-bloom.png);">
+                        <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center p-4 text-white">
+                            <h3 class="text-lg font-semibold">60% Off | Bloom Plant</h3>
+                            <a href="#" class="underline mt-1 text-sm font-semibold">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="relative rounded-xl overflow-hidden h-36 md:h-40 bg-cover bg-center" style="background-image: url(images/deal-ana.png);">
+                        <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center p-4 text-white">
+                            <h3 class="text-lg font-semibold">30% Off | Ana Plant</h3>
+                            <a href="#" class="underline mt-1 text-sm font-semibold">Shop Now</a>
+                        </div>
+                    </div>
+                </div>    
+                <div class="md:col-span-2">
+                    <div class="relative rounded-xl overflow-hidden h-80 bg-cover bg-center" style="background-image: url(images/deal-zabo.png);">
+                        <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-white p-6">
+                            <h3 class="text-2xl md:text-3xl font-semibold mb-2">25% Off | Zabo Plant</h3>
+                            <a h ref="#" class="underline text-lg font-semibold">Shop Now</a>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </section>
     </main>
     <footer>
 
